@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContactMe</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat Alternates">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body style="font-family: Montserrat Alternates;">
+    <nav
+      class="flex justify-between px-14 py-5 items-center bg-white shadow-md fixed w-full"
+    >
+      <div>
+        <a href="./index.html"><img src="./img/logo portfolio.png" alt="" /></a>
+      </div>
+      <div class="space-x-7">
+        <a href="./project.html" class="text-gray-700 hover:text-[#9B4CB3] text-lg">Projects</a>
+        <a href="./skills.html" class="text-gray-700 hover:text-[#9B4CB3] text-lg">Skills</a>
+        <a href="./contact.html" class="text-gray-700 hover:text-[#9B4CB3] text-lg">Contact</a>
+      </div>
+      <button
+        class="bg-[#72168e] text-white px-7 py-2 rounded-xl hover:bg-[#9B4CB3]"
+      >
+        Explore Now
+      </button>
+    </nav>
+    <section class="w-full mx-auto px-16 py-38">
+        <h1 class="text-5xl font-bold mb-4">Contact Me</h1>
+        <p class="mb-8 text-[22px]">Reach out for any inquiries or collaborations</p>
+      </div>
+        <form action="#" class="space-y-4">
+          <div>
+            <label for="Full-Name" class="block font-medium mb-3">Name</label>
+            <input
+              type="text"
+              name=""
+              id="Full-Name"
+              placeholder="Enter your name"
+              class="border border-gray-300 shadow-md w-[50%] p-3 rounded-[10px]"
+            />
+          </div>
+          <div>
+            <label for="Email" class=" font-medium block mb-3">Email</label>
+            <input
+              type="email"
+              name=""
+              id="Email"
+              placeholder="Enter your email"
+              class="border border-gray-300 shadow-md w-[50%] p-3 rounded-[10px]"
+            />
+          </div>
+          <div>
+            <label for="Message" class="block font-medium mb-3">Message</label>
+            <textarea name="Message" id="Message" class="border border-gray-300 shadow-md h-[90px] w-[50%] text-gray-400 mb-9 p-3">Type your Message</textarea>
+          </div>
+          <!-- <div>
+            <input
+              type="checkbox"
+              name="Terms"
+              id="Terms"
+              value="I accept the Terms"
+            />
+            <label for="Terms">I accept the Terms</label>
+          </div> -->
+
+          <button class="bg-[#72168e] hover:bg-[#9B4CB3] text-white px-7 py-2.5 font-bold rounded-[10px] ml-[300px]">Submit</button>
+        </form>
+    </section>
+    <footer class="bg-gray-100 py-6 px-4 md:px-8 lg:px-16">
+      <div class="container mx-auto flex flex-col items-center">
+        <nav class="flex space-x-7 text-sm mb-6 mt-10">
+          <a href="./project.html" class="hover:underline">Projects</a>
+          <a href="./skills.html" class="hover:underline">Skills</a>
+          <a href="./contact.html" class="hover:underline">Contact</a>
+        </nav>
+        <hr class="w-full mb-6 ">
+        <p class="mb-3 text-xs text-center">Copyright © 2025 Clifford Nyarko Obuobi. All rights reserved.</p>
+        <div class="flex text-xs space-x-5">
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
