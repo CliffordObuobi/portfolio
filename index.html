@@ -9,40 +9,41 @@
       href="https://fonts.googleapis.com/css?family=Montserrat Alternates"
     />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body style="font-family: Montserrat Alternates">
     <nav
-      class="flex justify-between px-14 py-5 items-center bg-white shadow-md w-full fixed"
+      class="flex justify-between px-25 py-5 items-center bg-white shadow-md w-full fixed"
     >
-      <div>
-        <a href="./index.html"><img src="./img/logo portfolio.png" alt="" /></a>
+      <div class="w-50">
+        <a href="./index.html"><img src="./img/logo portfolio.png" alt="" class="w-32" /></a>
       </div>
       <div class="space-x-7">
         <a
           href="./project.html"
-          class="text-gray-700 hover:text-[#9B4CB3] text-lg"
+          class="text-gray-700 hover:text-[#9B4CB3] text-2xl hover:underline"
           >Projects</a
         >
         <a
           href="./skills.html"
-          class="text-gray-700 hover:text-[#9B4CB3] text-lg"
+          class="text-gray-700 hover:text-[#9B4CB3] text-2xl hover:underline"
           >Skills</a
         >
         <a
           href="./contact.html"
-          class="text-gray-700 hover:text-[#9B4CB3] text-lg"
+          class="text-gray-700 hover:text-[#9B4CB3] text-2xl hover:underline"
           >Contact</a
         >
       </div>
       <button
-        class="bg-[#72168e] text-white px-7 py-2 rounded-xl hover:bg-[#9B4CB3]"
+        class="bg-[#72168e] text-white px-8 py-5 rounded-xl hover:bg-[#9B4CB3] text-xl hover:underline"
       >
         Explore Now
       </button>
     </nav>
     <!-- Hero Section -->
     <section>
-      <div class="flex bg-gray-100 items-center">
+      <div class="flex bg-purple-200 items-center">
         <div class="px-40">
           <h1 class="font-bold text-7xl/20 mb-10">
             <span>Crafting</span>
@@ -111,7 +112,7 @@
       </div>
     </section>
     <!-- Projects Section -->
-    <section>
+    <section class="bg-purple-200">
       <div class="text-center leading-40 py-17">
         <p class="text-3xl py-3">My Projects</p>
         <p class="font-extrabold text-7xl py-10">Showcasing My Work</p>
@@ -223,8 +224,32 @@
     </div>
     </section>
     <!-- contact me section -->
-     <section>
-      div
+     <section class="bg-purple-200 p-7">
+      <div class="text-center py-25">
+        <p class="text-3xl leading-17">Get in Touch</p>
+        <p class="font-bold text-6xl leading-25">Contact Me</p>
+        <p class="text-2xl">Feel free to reach out for any inquiries or collaborations. I’m here to help!</p>
+      </div>
+      <div class="flex px-30 w">
+        <div class="text-center px-20">
+          <i class="fa fa-envelope fa-3x pb-3.5" aria-hidden="true"></i>
+          <p class="font-bold text-3xl leading-10">Email</p>
+          <p>You can contact me via email at <a href="#" class="text-blue-700 font-bold">cliffordobuobi96@gmail.com</a>. I look forward to hearing from you!</p>
+        </div>
+        <div class="text-center px-20">
+          <i class="fa fa-phone fa-3x pb-3.5" aria-hidden="true"></i>
+          <p class="font-bold text-3xl leading-10" >Phone</p>
+          <p>You can contact me via email at <a href="#" class="text-blue-700 font-bold">+233267113211</a>. I look forward to hearing from you!</p>
+        </div>
+        <div class="text-center px-20">
+          <i class="fa fa-map-marker fa-3x pb-3.5" aria-hidden="true"></i>
+          <p class="font-bold text-3xl leading-10">Address</p>
+          <p>Visit me at my office located at <strong>Oxford Street, Accra, Ghana.</strong>Let's connect!</p>
+        </div>
+      </div>
      </section>
+     <footer class="p-4 bg-purple-800 text-white font-bold">
+      <p class="text-center text-xl">&copy; 2025 Clifford Nyarko Obuobi</p>
+     </footer>
   </body>
 </html>
