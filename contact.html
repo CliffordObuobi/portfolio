@@ -11,12 +11,14 @@
   </head>
   <body style="font-family: Montserrat Alternates;">
     <nav
-      class="flex justify-between px-25 py-3 items-center bg-white shadow-md w-full fixed"
+      class="flex justify-between px-4 md:px-8 py-3 items-center bg-white shadow-md w-full fixed"
     >
       <div class="w-20">
-        <a href="./index.html"><img src="./img/logo portfolio.png" alt="" class="w-32" /></a>
+        <a href="./index.html"
+          ><img src="./img/logo portfolio.png" alt="" class="w-24 md:w-32"
+        /></a>
       </div>
-      <div class="space-x-8">
+      <div class="hidden md:flex space-x-4">
         <a
           href="./project.html"
           class="text-gray-700 hover:text-[#9B4CB3] text-lg hover:underline"
@@ -34,10 +36,56 @@
         >
       </div>
       <button
-        class="bg-[#72168e] text-white px-6 py-4 rounded-xl hover:bg-[#9B4CB3] text-sm hover:underline"
+        class="hidden md:block bg-[#72168e] text-white px-4 py-2 rounded-xl hover:bg-[#9B4CB3] text-sm hover:underline"
       >
         Explore Now
       </button>
+      <div class="md:hidden">
+        <button id="menu-button">
+          <svg
+          class=" h-6 w-6 fill-current text-gray-700"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div id="menu"
+      class="hidden absolute top-full left-0 w-full bg-white shadow-md mt-1 p-4">
+        <a
+          href="./project.html"
+          class="block py-2 text-gray-700 hover:text-[#9B4CB3] hover:underline"
+          >Projects</a
+        >
+        <a
+          href="./skills.html"
+          class="block py-2 text-gray-700 hover:text-[#9B4CB3] hover:underline"
+          >Skills</a
+        >
+        <a
+          href="./contact.html"
+          class="block py-2 text-gray-700 hover:text-[#9B4CB3] hover:underline"
+          >Contact</a
+        >
+        <button
+          class="block mt-4 bg-[#72168e] text-white px-4 py-2 rounded-xl hover:bg-[#9B4CB3] text-sm hover:underline"
+        >
+          Explore Now
+        </button>
+      </div>
+      <script>
+        const menuButton = document.getElementById("menu-button");
+        const menu = document.getElementById("menu");
+
+        menuButton.addEventListener("click", () => {
+          menu.classList.toggle("hidden");
+        })
+      </script>
     </nav>
     <section class="py-38">
         <div class="grid grid-cols-2">
